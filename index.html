@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Example 09 06</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css" >
+<link rel="stylesheet" href="fontawesome/css/fontawesome-all.css" >
+<link rel="stylesheet" href="css/style.css" >
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="col-xs-12 top-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 info">
+						<span class="email"><i class="far fa-envelope"></i>info@gmail.com</span>
+						<span class="fax"><i class="fas fa-fax"></i>444-332-454-222</span>
+					</div>
+					<div class="col-md-6 text-right">
+						<a class="icon"><i class="fab fa-facebook-f"></i></a>
+						<a class="icon"><i class="fab fa-twitter"></i></a>
+						<a class="icon"><i class="fab fa-google-plus-g"></i></a>
+						<a class="icon"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<nav class="nav">
+		<div class="col-xs-12">
+			<div class="container">
+				<div class="logo text-center">
+					<a href="#"><img src="#"/></a>
+					<a href="#"  class="menu-icon visible-xs pull-right">MENU</a>
+				
+				</div>
+				<div class="menu hidden-xs">
+					<ul>
+						<li><a href="#">Home</a><div class="drop-down" style="display: none;">XXX1111</div></li>
+						<li><a href="#">Products</a><div class="drop-down" style="display: none;">XXX2222</div></li>
+						<li><a href="#">Hot Deals</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					
+					</ul>
+				</div>
+				<div class="simple-cart pull-right">
+					<a href="#"><span class="glyphicon glyphicon-search"></span></a>
+					<a href="#"><i class="fas fa-user-secret"></i></a>
+					<a href="#"><i class="fas fa-shopping-basket"></i><span class="badge">4</span></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<script type="text/javascript">
+		
+		
+		function loadAjax(el){
+			
+		
+				jQuery('.button-set img').show();
+			jQuery('.button-set button').hide();
+			var page = parseInt(jQuery(el).attr('data-page'));
+				jQuery.ajax({
+				url: 'https://truyen.tangthuvien.vn/tim-kiem',
+				data: {
+					'page': page,
+					'term': 'nhat',
+
+				},
+				method: "GET",
+				success: function(data){
+					var html = '';
+					for (var i = 0; i < data.length; i++) {
+						html += '<tr><td class="id">'+data[i].id+'</td><td class="name">'+data[i].name+'</td><td class="url">'+data[i].url+'</td><td>'+data[i].type+'</td><td><a class="btn btn-primary" onclick="viewInfo(this)">View</a></td></tr>';
+					}
+					jQuery('table tbody').append(html);
+					jQuery(el).attr('data-page',page+1);
+					//setTimeout(function(){ 
+						jQuery('.button-set img').hide();
+						jQuery('.button-set button').show();
+					// }, 10000);
+				
+				}
+			});
+			
+			
+		}
+	
+			
+		function viewInfo(e){
+				var tr = jQuery(e).parent().parent();
+				jQuery('.pop-view .info-id').text(jQuery(tr).find('td.id').text());
+				jQuery('.pop-view .info-name').text(jQuery(tr).find('td.name').text());
+				jQuery('.pop-view .info-url').text(jQuery(tr).find('td.url').text());
+				jQuery('.pop-view').fadeIn();	
+				jQuery('.mask').fadeIn();	
+		}
+
+		function closePop(){
+			jQuery('.popup').hide();	
+				jQuery('.mask').hide();
+		}
+
+	</script>
+	<div class="container">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>URL</th>
+				<th>Type</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	
+	</table>
+	<div class="button-set">
+		<img src="images/giphy.gif"  style="display: none;" />
+	<button type="button" class="btn btn-primary btn-lg" data-page ="1"  onclick="loadAjax(this);">
+	  Load more
+	</button>
+</div>
+<div class="popup pop-view" style="display: none">
+	<span class="info-id"></span>
+	<span class="info-name"></span>
+	<span class="info-url"></span>
+</div>
+<div class="pop-edit popup" style="display: none;">
+	<form class="...">
+		<input>
+		<button type="button" onclick="return FFF();"></button>
+	</form>
+</div>
+<div class="mask" onclick="closePop()" style="display: none"></div>
+</body>
+</html>
