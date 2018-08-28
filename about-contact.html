@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ryana Calendars</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+
+<style>
+.dropbtn {
+
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: inline-block;
+
+}
+.dropbtn:hover , .mydropdown:hover > a {
+  text-decoration: none;
+  color: #006600;
+  font-weight: bold;
+}
+.mydropdown {
+    position: relative;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd; color: black;}
+
+.mydropdown:hover .dropdown-content {display: block;}
+
+
+</style>
+
+</head>
+<body>
+  <p class="ad1"><a href="#">Summer Sales Incoming!<a/></p>
+  <header>
+    <div class="flex-container">
+      <a href="#" class="lefter">blog</a>
+      <a href="index.html" class="firm-logo">
+        <img src="images/zxc.png" alt="Ryana Calendars" />RYANA CALENDARS
+      </a>
+      <a href="#" class="utility">viewbag</a>
+    </div>
+  </header>
+  <nav id='navbar'>
+    <div class="flex-container">
+      <div class="mydropdown">
+        <a class="dropbtn" href="#">Diaries</a>
+        <div class="dropdown-content">
+          <a href="#">Diaries</a>
+          <a href="#">Diaries</a>
+          <a href="#">Diaries</a>
+        </div>
+      </div>
+      <div class="mydropdown">
+        <a class="dropbtn" href="#">Pens</a>
+        <div class="dropdown-content">
+          <a href="#">NoteBooks</a>
+          <a href="#">NoteBooks</a>
+          <a href="#">NoteBooks</a>
+        </div>
+      </div>
+      <div class="mydropdown">
+        <a class="dropbtn" href="#">Calendars</a>
+        <div class="dropdown-content">
+          <a href="#">Calendars</a>
+          <a href="#">Calendars</a>
+          <a href="#">Calendars</a>
+        </div>
+      </div>
+      <div class="mydropdown">
+        <a class="dropbtn" href="#">NoteBooks</a>
+        <div class="dropdown-content">
+          <a href="#">NoteBooks</a>
+          <a href="#">NoteBooks</a>
+          <a href="#">NoteBooks</a>
+        </div>
+      </div>
+      <div class="mydropdown">
+        <a class="dropbtn" href="#">Others</a>
+        <div class="dropdown-content">
+          <a href="#">Others</a>
+          <a href="#">Others</a>
+          <a href="#">Others</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div>
+      <div class="contact-us">
+        <div class="contac-content">
+              <h1>Contact Ryana Dinaries</h1>
+              <div class="content-map">
+                <figure class="map">
+                  <img src="images/contact.jpg" alt="Contact-map" width="900px" height="500px">
+                </figure>
+              </div>
+              
+              <div class="text-editor">
+                <h2>Need support</h2>
+                <p> 
+                  For basic questions and tech info, check our 
+                  <a href="#" target="_blank">FAQ page</a>
+                </p>
+                <p>
+                  You can send us a message using our 
+                   or reach out by phone.&nbsp;We do our best to get back to you within 24–48 hours.
+                </p>
+                <p>
+                  <strong>(US) Telephone:&nbsp;</strong>
+                  (831) 471-2547
+                </p>
+                <h3>&nbsp;</h3>
+                <h3>Our Address:</h3>
+                <p>
+                  <strong>Ryana Dinaries</strong>
+                  <br>
+                  2841 Mission Street
+                  <br>
+                  Santa Cruz, California 95060
+                  <br>
+                  USA
+                </p>
+              </div>
+        <div class="contactform">
+              <h1 class="basic-page__title">Send Us Message </h1>
+              <p>Reach out to&nbsp;us using the form below.&nbsp;We'll do our best to answer quickly so you can get back out and ride.</p>
+               <form method="post" id="form" novalidate="novalidate"
+                  enctype="multipart/form-data" class="message" action="#">
+                  <div class="input-container">
+                    <input id="name" type="text" name="sender_name" placeholder="Name"/>
+                    <p id="nameCheck">Let us know your name!</p>
+                    <input id="mail" type="email" name="sender_mail" placeholder="Email"/>
+                    <p id="mailCheck">Email must follow the pattern "xyz@abc"!</p>
+                  </div>
+                  <textarea id="mess" placeholder="Message..."></textarea>
+                  <p id="messCheck">Share your thought with us!</p>
+                  <div class="button-group">
+                    <input id="reset" type="reset" value="RESET"/>
+                    <button type="submit">SEND</button>
+                  </div>
+                </form>
+        </div>
+      </div>
+    </div>
+        
+  </main>
+  <footer class="parallax no3">
+          <a href="faqs.html">FAQs</a>
+          <a href="about-contact.html">Contact Us</a>
+          <a href="_aboutUs.htm">About Us</a>
+          <a href="#">Stores List</a>
+        </footer>
+
+
+</body>
+<!-- <script src="js/validate.js"></script>
+<script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script> -->
+</html>
