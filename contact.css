@@ -1,0 +1,75 @@
+h1{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+.contact-us {
+  width: 60%;
+  margin: 0 auto;
+}
+.form-group{
+    border-color: #c87872;
+    box-shadow: 0 0 3px rgba(171,41,32,0.25);
+    box-sizing: content-box;
+}
+.contact-us {position: relative;}
+#nameCheck, #mailCheck, #subCheck, #messCheck {
+  position: absolute;
+  font-size: 70%;
+  color: red;
+  display: none;
+}
+#nameCheck {
+  padding-top: 43px;
+  left: 15px;
+}
+#mailCheck {
+  padding-top: 43px;
+  right: 10px;
+}
+#messCheck {
+  bottom: 9%;
+  left: 15px;
+}
+
+ form.message {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 380px;
+}
+ form.message >div:first-child>span,
+ .contact >div:first-child>span,
+ .contact >div.follow>span {color: #f1ad1d;}
+ form.message > p {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  color: #5c5c5c;
+}
+ form.message > .input-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 25px;
+}
+ form.message > .input-container > input,
+ form.message > textarea  {
+  padding: 10px 0 10px 20px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  border: 2px solid #929292;
+}
+ form.message > textarea  {
+  height: 120px;
+}
+ form.message > .button-group > *{
+  padding: 10px 40px;
+  background: grey;
+  color: white;
+  font-size: 14px;
+  margin-right: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
