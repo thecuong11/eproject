@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <title>Ryana Calendars</title>
+  <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="js/function.js"></script>
+
+
+
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" type="text/css" href="csss/blog.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/aboutus.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <header class="bg-light">
+    <div class="container">
+      <div class="flex">
+        <div class="link">
+          <div><a href="index.html">HOME</a></div>
+          <div><a href="shop?cat=diaries">SHOP</a></div>
+          <div><a href="bloghome.html">BLOG</a></div>
+        </div>
+        <div class="logo"><a href="index.html"><img src="images/zxc.png" />RYANA CALENDARS</a></div>
+        <div  class="bag"><a id="bag" href="viewbag.html">bag</a></div>
+      </div>
+    </div>
+  </header>
+  <main>
+   <div class="container">
+      <h1>OUR STORY</h1>
+      <div class="blog-flex">
+        <div class="blog-content">
+          <p style="text-indent: 20px;">It's hard to believe, but more than ten years have passed since the world's first kikki.K boutique opened. As I look back on this little business I started from my tiny one bedroom apartment, it's so rewarding to see how far we've come. Struggling to define my career path, I awoke one morning at 3am with a million ideas running through my head. At that moment, my partner Paul urged me to make a list of what my ideal career would look like. What followed was a determination to create a business that would connect me to my home of Sweden, draw on my passion for design, and allow me to be excited driving to work on a Monday morning. With clarity around my career goals, I began to set up my home office.</p><br/>
+          <div class="image-box"><a href="#"><img src="images/blogimg6.jpg"></a></div>
+          <p style="text-indent: 20px; padding-top: 20px;" >However, the stylish stationery and organisation tools I had grown used to, were not widely available outside of Sweden. I soon discovered I wasn't the only one faced with this challenge, and so my vision for kikki.K was born. After identifying this gap in the market, it wasn't long before I'd convinced Paul to sell his home to fund the opening of our first kikki.K boutique - an exciting, yet slightly terrifying time.</p><br/>
+          <div class="image-box"><a href="#"><img src="images/bloggt.jpg"></a></div>
+
+          <p style="text-indent: 20px; padding-top: 20px;">The years that followed have flown by so quickly. We've met millions of stationery lovers, and today we continue to work towards our vision of having something kikki.K in every stylish life the world over. My native Sweden continues to inspire our collections - the colours of the seasons; the textures of the landscape; and the simplicity and clean lines that have defined Swedish design for decades. I'm so excited for what tomorrow will bring, and the chance to keep sharing Swedish design stationery, gorgeous gifts and organisation solutions with stationery lovers across the globe. It's so rewarding to see my dream come to life.</p><br/>
+        </div>
+        <div style="text-align: center;"><iframe src="https://www.youtube.com/embed/Aj3zF0C0To8" width="70%" height="400px" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      </div>
+   </div>       
+  
+  </main>
+  <footer class="bg-light">
+    <div class="container">
+      <div class="link-container">
+        <div><a href="faqs.html">FAQs</a></div>
+        <div><a href="aboutUs.html">About</a></div>
+        <div><a href="#">Contact</a></div>
+        <div><a href="#">Stores List</a></div>
+      </div>
+      <div class="social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+    </div>
+    RYANA CALENDARS
+  </footer>
+</body>
+<script>
+if (localStorage.myBasket === undefined) {
+  localStorage.myBasket = '';
+  $("#bag").html(0);
+}
+else {
+  var arr = localStorage.myBasket.split(",");
+  arr.pop();
+  //console.log(arr);
+  $("#bag").html( count(occur(arr)[1]) );
+}
+</script>
+</html>

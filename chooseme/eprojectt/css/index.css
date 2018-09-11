@@ -1,0 +1,120 @@
+header .flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+header a, footer a {
+  text-decoration: none;
+  color: black;
+}
+header .flex .link {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+header .flex .logo img {
+  width: 20%;
+  height: auto;
+  margin-left: -15%;
+}
+header .flex .logo > a:hover, footer a:hover, header a:hover {
+  text-decoration: none;
+}
+
+header .flex .logo {
+  text-align: center;
+  width: 70%;
+}
+.batch  {
+  background: url("../images/bg2.jpg") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+main .info-text a {text-decoration: none; color: black;}
+main .info-text  {
+  background: rgba(255,255,255,0.3);
+  color: black;
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  text-align: center;
+  padding: 20px;
+}
+.des1 .part1 {
+  display: flex;
+  flex-flow: row wrap;
+  height: 500px;
+  align-items: center;
+}
+.des1 .part1 > p{
+  width: 50%;
+  font-size: 50px;
+}
+.des1 .part1 > div {
+  width: 50%;
+  color: gray;
+}
+.present {
+  display: flex;
+  flex-flow: row wrap;
+}
+ .present > div {
+  width: 33%;
+  padding: 10px;
+  text-align: center;
+}
+ .present > div > img {
+  max-width: 80%;
+  height: auto;
+}
+.batch.no2 {
+  background: url("../images/bg1.jpg") no-repeat bottom;
+  background-size: cover;
+}
+.des2 p, .des2 div{
+  text-align: center;
+}
+.des2 .part1 {
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.batch.no3 {
+  background: url("../images/bg5.jpg") no-repeat bottom;
+  background-size: cover;
+}
+.des3 .present {
+  justify-content: center;
+}
+.des3 .present  div {
+  text-align: center;
+  width: 50%;
+}
+.des3 .present  div  img {
+  max-width: 90%;
+}
+footer {
+  padding-top: 100px;
+  height: 300px;
+  text-align: center;
+}
+footer .link-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.social {
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.social  > a {
+  margin: 0 5px;
+}

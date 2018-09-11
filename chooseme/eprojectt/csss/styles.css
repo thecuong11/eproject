@@ -1,0 +1,307 @@
+* {
+margin: 0;
+padding: 0;
+border: 0
+font: 'Open Sans';
+}
+
+html, main{
+  height: 100%;
+}
+.body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.dropbtn {
+
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  display: inline-block;
+
+}
+.dropbtn:hover , .mydropdown:hover > a {
+  text-decoration: none;
+  color: #006600;
+  font-weight: bold;
+}
+.mydropdown {
+  position: relative;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  max-width: 100%;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white ;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd; color: black;}
+
+.mydropdown:hover .dropdown-content {display: block;}
+
+
+body {background-color: #f3f3f3 !important;}
+
+.header{
+  border-bottom: 1px solid black;
+}
+.header-container, .nav-container {
+  width: 1168px;
+   margin: 0 auto;
+ }
+ .container-of-container {border-bottom: 1px solid black;}
+header .flex-container {
+  /*width: 1168px;
+  margin: 0 auto;*/
+/*  background: #f3f3f3;*/
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+
+}
+header .flex-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+header .flex-container .firm-logo {
+  text-align: center;
+}
+header .flex-container .firm-logo > img {
+  max-width: 15%;
+  height: auto;
+}
+
+nav .flex-container > * {flex-basis: 20%; }
+nav  .flex-container {
+/*  width: 1168px;
+  margin: 0 auto; */
+  background: #f3f3f3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+p.ad1, p.ad2 {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0
+  
+}
+
+p.ad1 >a, p.ad2 >a {text-decoration: none; color: #333;  }
+
+p.ad1 >a:hover, p.ad2 >a:hover {color: pink;}
+
+p.ad1 {
+  border-bottom: 1px solid #333;
+  font-size: 16px;
+  padding: 0;
+}
+
+
+main .abc{
+  padding-top: 50px;
+}
+
+.row strong{
+  font-weight: 700;
+  color: #241f0c;
+}
+
+.row p{
+  line-height: 1.5rem;
+  font-size: .875rem;
+}
+
+
+
+.footer{
+  height: 60px;
+  width: 100%;
+  margin: 0 auto;
+  background: transparent;;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.footer{
+  
+}
+.footer > a {
+  text-decoration: none;
+  color: #fbce46;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer > a:hover {
+  color: white;
+}
+
+footer{
+  background-color: black;text-align: center;min-height: 100px;
+  padding-top: 25px;
+}
+
+.fullink{
+  width: 25%;
+  float: left;
+}
+.main-container{background-color: #ffffff;}
+
+
+
+.sidenav{
+  height: 25%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+    padding-top: 60px; 
+}
+.sidenav a{
+  padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for page */
+.container {
+  width: 70%;
+}
+
+body {
+  color: #4B4B4B;
+  font-family: sans-serif;
+}
+body a {
+  cursor: pointer;
+  color: #4B4B4B;
+  text-decoration: none;
+}
+body section {
+  margin-bottom: 90px;
+}
+body section h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 10px;
+  font-size: 25px;
+  line-height: 1.5;
+}
+body section p, body section a {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+span {
+  letter-spacing: 0px;
+}
+
+p {
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Styles for Accordion */
+.toggle:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+.toggle .toggle-title {
+  position: relative;
+  display: block;
+  border-top: 1px solid #dddddd;
+  margin-bottom: 6px;
+}
+.toggle .toggle-title h3 {
+  font-size: 20px;
+  margin: 0px;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 200;
+}
+.toggle .toggle-inner {
+  padding: 7px 25px 10px 25px;
+  display: none;
+  margin: -7px 0 6px;
+}
+.toggle .toggle-inner div {
+  max-width: 100%;
+}
+.toggle .toggle-title .title-name {
+  display: block;
+  padding: 25px 25px 14px;
+}
+.toggle .toggle-title a i {
+  font-size: 22px;
+  margin-right: 5px;
+}
+.toggle .toggle-title i {
+  position: absolute;
+  background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+  margin: 20px;
+  right: 0;
+}
+.toggle .toggle-title.active i {
+  background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px 0px no-repeat;
+}

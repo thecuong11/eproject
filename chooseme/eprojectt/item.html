@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <title>Ryana Calendars</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/item.css">
+  <script src="js/function.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<header class="">
+  <div class="container">
+    <div class="flex">
+      <div class="link">
+        <div><a href="index.html">HOME</a></div>
+        <div><a href="shop?cat=diaries">SHOP</a></div>
+        <div><a href="bloghome.html">BLOG</a></div>
+      </div>
+      <div class="logo"><a href="index.html"><img src="images/zxc.png" />RYANA CALENDARS</a></div>
+      <div  class="bag"><a id="bag" href="viewbag.html">bag</a></div>
+    </div>
+  </div>
+</header>
+<div class="bg-dark">
+  <nav class="navbar navbar-dark navbar-expand-sm bg-dark container justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a id="diaries" class="nav-link" href="shop?cat=diaries">Diaries</a>
+      </li>
+      <li class="nav-item">
+        <a id="calendars" class="nav-link" href="shop?cat=calendars">Calendars</a>
+      </li>
+      <li class="nav-item">
+        <a id="pens" class="nav-link" href="shop?cat=pens">Pens</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main>
+<div class="cover container">      <div class="navig">      <a href="/item?item_id=4&cat=diaries">prev</a>      <a href="/item?item_id=6&cat=diaries">next</a>      </div>        <div class="item-flex">          <div class="item-image">            <div><img src="images/da5.jpg" /></div>            <div><img src="images/da5-2.jpg" /></div>          </div>          <div class="info">            <p class="name">diaries 2</p>            <p class="price">666</p>            <p class="des"> day la mo ta so 5 </p>            <p><span id="qty" class="badge badge badge-secondary">Quantity: 1</span>            <button id="plus" type="button" class="btn btn-outline-dark">+</button>            <button id="minus" type="button" class="btn btn-outline-dark">&#8211;</button></p>            <button id="buy" type="button" class="btn btn-outline-dark">ADD TO CART</button>          </div>        </div>      </div></main><footer class="">  <div class="container">    <div class="link-container">      <div><a href="faqs.html">FAQs</a></div>      <div><a href="aboutUs.html">About</a></div>      <div><a href="contact-us.html">Contact</a></div>      <div><a href="#">Stores List</a></div>    </div>    <div class="social">      <a href="#" class="fa fa-facebook"></a>      <a href="#" class="fa fa-twitter"></a>    </div>  </div>  RYANA CALENDARS</footer><div id="curCat" style="display:none;">diaries</div><div id="item_id" style="display:none;">5</div></body><script src="js/item.js"></script></html>
