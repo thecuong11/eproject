@@ -1,0 +1,28 @@
+main {
+  padding-top: 50px;
+}
+
+.item-flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+
+}
+.item-flexbox .item-card {
+  padding: 10px;
+  text-align: center;
+  width: 33%;
+  cursor: pointer;
+
+}
+
+.item-flexbox .item-card .item-img.second {display: none;} /*
+.item-flexbox .item-card:hover .item-img.second {display: block;}
+.item-flexbox .item-card:hover .item-img.first {display: none;} */
+.item-flexbox .item-card img {
+  max-width: 50%;
+  margin-bottom: 10px;
+}
+.item-flexbox .item-card a {
+  display: inline-block;
+}

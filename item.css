@@ -1,0 +1,37 @@
+.item-flex {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.item-image {
+  width: 60%;
+}
+.info {
+  width: 40%;
+}
+.item-flex img {
+  width: 80%;
+  height: auto;
+}
+.info .name {font-size: 50px;}
+.info .price {
+  font-size: 20px;
+  color: gray;
+}
+.info .des {
+  line-height: 2;
+}
+#qty {font-size: 20px; margin-right: 15px;}
+#plus, #minus {font-size: 15px; padding: 3px 9px; vertical-align: top;}
+#buy {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.cover {position:relative;}
+.cover .navig {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+.cover .navig a {margin: 5px;}
